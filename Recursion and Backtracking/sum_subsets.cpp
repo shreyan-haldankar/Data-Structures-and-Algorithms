@@ -51,9 +51,22 @@ vector<vector<int>> combinationSum(vector<int> &candidates, int target)
 
 int main(int argc, char const *argv[])
 {
-    vector<int> candidates{5, 10, 12, 13, 15, 18};
-    int target = 30;
+    vector<int> candidates;
+    // {5, 10, 12, 13, 15, 18}
+    int n;
+    int target;
+    cout << "Enter the number of candidates:";
+    cin >> n;
+    cout<<"Enter the target:";
+    cin >> target;
+    for(int i=0;i<n;i++)
+    {
+        int candidate;
+        cin >> candidate;
+        candidates.push_back(candidate);
+    }
     combinationSum(candidates, target);
+
 
     return 0;
 }
