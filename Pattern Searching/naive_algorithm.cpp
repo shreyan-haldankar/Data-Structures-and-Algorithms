@@ -1,39 +1,34 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
-
-void searchPattern(char *text, char *pattern)
+void naiveSearch(string s, string p)
 {
-    int N = strlen(text);
-    int M = strlen(pattern);
-
-    for (int i = 0; i < N - M; i++)
+    cout <<"String: "<< s << "\nPattern: " << p << endl;
+    for (int i = 0; i <= (s.length() - p.length()); i++)
     {
         int j;
-        for (j = 0; j < M; j++)
+        for (j = 0; j < p.length(); j++)
         {
-            if (text[i + j] != pattern[j])
+            if (s[i + j] != p[j])
             {
                 break;
             }
         }
-        if (j == M)
+        if (j == p.length())
         {
-            cout << "Pattern found at index: " << i << endl;
+            cout << "Pattern found at index " << i << endl;
         }
     }
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
-    char text[100];
-    char pattern[100];
-    cout << "Enter the text: " ;
-    cin >> text;
-    cout << "Enter the pattern: " ;
+    string s;
+    cout << "Enter the string : ";
+    cin >> s;
+    string pattern;
+    cout << "Enter the pattern to be searched : ";
     cin >> pattern;
-    cout << "Text:    " << text << endl;
-    cout << "Pattern: " << pattern << endl;
-    searchPattern(text, pattern);
-
+    naiveSearch(s, pattern);
     return 0;
 }
