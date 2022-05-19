@@ -3,6 +3,9 @@
 using namespace std;
 void naiveSearch(string s, string p)
 {
+    // int m,n;
+    // n = strlen(s);
+    // m = strlen(p);
     cout <<"String: "<< s << "\nPattern: " << p << endl;
     for (int i = 0; i <= (s.length() - p.length()); i++)
     {
