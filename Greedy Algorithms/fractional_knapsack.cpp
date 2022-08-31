@@ -170,3 +170,12 @@ int main(int argc, char const *argv[])
     cout << "Maximum Profit = " << fractional_knapsack(capacity, arr, n);
     return 0;
 }
+
+// Fractional Knapsack Problem
+
+// 1. Sort the items according to their val/weight ratio
+// 2. Keep addding to the bag until the max capacity is reached 
+// 3. Keep adding fraction of the weight if we cant fit the whole item
+// 4. Add profit to final value
+// remain = total capacity - current capacity 
+// 5. Profit of fractioned item +=  (Profit of the item to be added ) * (remain/weight of the item to be added)
