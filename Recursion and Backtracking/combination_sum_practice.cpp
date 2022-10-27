@@ -51,15 +51,16 @@ int main(int argc, char const *argv[])
 {
     vector<int> candidates;
     int n;
-    int target;
+    int target=0;
     cin >> n;
+    cin >> target;
     for (int i = 0; i < n; i++)
     {
         int candidate;
         cin >> candidate;
         candidates.push_back(candidate);
     }
-
+    
     combinationSum(candidates, target);
 
     

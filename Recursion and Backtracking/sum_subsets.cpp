@@ -58,6 +58,8 @@ int main(int argc, char const *argv[])
     cin >> n;
     cout<<"Enter the target:";
     cin >> target;
+    cout << "Enter the candidates: ";
+
     for(int i=0;i<n;i++)
     {
         int candidate;
