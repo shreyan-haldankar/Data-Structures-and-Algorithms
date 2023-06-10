@@ -21,11 +21,21 @@ int main(int argc, char const *argv[])
     // {
     //     cout << (*it).first << " " << (*it).second << " ";
     // }
+    vp.erase(vp.begin()+1, vp.begin()+3);
+    // vp.insert(vp.begin(),{100,200});
+
+    vector<pair<int,int>> copy(2,{1000,2000});
+    vp.insert(vp.begin(),copy.begin(), copy.end());
+    vp.pop_back();
+
     for ( it = vp.begin(); it!=vp.end(); ++it)
     {
         cout << it->first << " " << it->second << " " << endl;
     }
+    cout << "Size of the vector is " << vp.size();
     
 
+    vp.clear();
+    // cout  << vp.empty();
     return 0;
 }
