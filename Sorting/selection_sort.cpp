@@ -79,7 +79,7 @@ int main(int argc, char const *argv[])
             swap(arr[i], arr[min_ind]);
         }
     }
-    cout << "\nSorted array: ";
+    cout << "\nSorted array: " << endl;
 
     for (int i = 0; i < n; i++)
     {
