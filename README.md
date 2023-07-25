@@ -4,7 +4,7 @@ I will be updating this repo as I practice some DSA problems
 
 Plan (Concept Learning + Problem Solving)
 - [x] C++ STL (31/31)
-- [ ] Learn Important Sorting Techniques (2/7)
+- [x] Learn Important Sorting Techniques (7/7)
 - [ ] Arrays (6/40)
 - [ ] Binary Search
 - [ ] Strings (Basic and Medium)
