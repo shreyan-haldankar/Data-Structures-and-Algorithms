@@ -10,7 +10,7 @@ def merge_sort(arr, start, end):
 def merge_list(arr, start, mid, end):
     left = arr[start:mid]
     right = arr[mid:end]
-    k = start
+    k = start     
     i = 0
     j = 0
     while start + i < mid and mid + j < end:
